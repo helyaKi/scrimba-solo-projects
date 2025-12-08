@@ -1,0 +1,89 @@
+body {
+  background-image: url("bus-station.png");
+  background-size: cover;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: white;
+  max-width: 25%;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  font-weight: bold;
+  padding: 40px 20px;
+}
+.count-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+h2 {
+  font-size: 1.5rem;
+  position: relative;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid black;
+  width: 90%;
+  border-radius: 30%;
+  animation: blinking 1.5s ease-in-out;
+  animation-iteration-count: 3;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: background-color 0.3s ease-in, transform 0.1s ease-out;
+}
+button:hover {
+  background-color: rgba(150, 226, 29, 0.725);
+}
+button:active {
+  transform: scale(0.9);
+}
+#save-btn:hover {
+  background-color: rgba(249, 177, 69, 0.911);
+}
+
+p {
+  color: rgb(91, 88, 88);
+  text-align: left;
+  margin: 20px 20px 0 20px;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  30% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  80% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

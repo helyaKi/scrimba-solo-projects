@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  outline: none;
+  font-family: VT323, serif;
+}
+:root {
+  --secondary-font-family: "Anek Telugu", sans-serif;
+  --uni-name-font-family: "Lalezar", sans-serif;
+  --primary-border-radius: 10px;
+  --secondary-border-radius: 5px;
+}
+h1,
+h2,
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+small,
+p {
+  font-family: var(--secondary-font-family);
+}
+small {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: rgba(255, 182, 160, 0.738);
+  position: absolute;
+  transform: translate(-100%);
+  top: 0.4rem;
+}
+.container {
+  height: 100vh;
+  background-color: rgb(18, 18, 18);
+  display: grid;
+  place-items: center;
+}
+#root {
+  border: 4px solid rgb(210, 77, 33);
+  width: 20rem;
+  aspect-ratio: 1/1.8;
+  border-radius: var(--primary-border-radius);
+  background-color: rgb(45, 42, 41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* HEADER CONTENT */
+.top-section {
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(244, 141, 107);
+  border-radius: var(--secondary-border-radius) var(--secondary-border-radius) 0
+    0;
+}
+.top-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bottom-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.bottom-section h2 {
+  font-size: 1.65rem;
+}
+.bottom-section h3 {
+  position: relative;
+  /* font-family: var(--uni-name-font-family); */
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  /* word-spacing: 0.2rem; */
+  color: rgb(221, 215, 215);
+  /* line-height: 1rem; */
+}
+
+.bottom-section button {
+  font-family: var(--secondary-font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: white;
+  border: none;
+  color: rgb(45, 42, 41);
+  padding: 5px 0;
+  margin: 10px 0 0;
+  border-radius: var(--secondary-border-radius);
+  cursor: pointer;
+}
+.bottom-section button i {
+  color: rgb(45, 42, 41);
+}
+/* MAIN CONTENT */
+.main {
+  width: 80%;
+}
+.main h2 {
+  letter-spacing: none;
+}
+.main p {
+  margin: 3px 0 8px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+/* FOOTER CONTENT */
+.social-media {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px 0;
+  background-color: rgb(18, 18, 18);
+  border-top: 6px double rgb(45, 42, 41);
+}
+.social-media .links {
+  width: 80%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.links li i {
+  font-size: 1.2rem;
+}
