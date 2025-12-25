@@ -4,7 +4,7 @@ A collection of frontend projects built during **Scrimba** curriculum.
 
 ## Projects
 
-- [Quizzical App](./react/quizzical/qzcl/)
+- [Quizzical App](./react/quizzical/)
 - [Digital Business Card](./react/digital-business-card/dbc/)
 - [Unit Converter App](./js/unit-converter/)
 - [Password Generator App](./js/password-generator/)
