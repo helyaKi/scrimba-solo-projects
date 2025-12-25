@@ -42,6 +42,8 @@ cd "quizzical\qzcl"
 
 ```bash
 npm install
+# extra dependencies if needed
+npm install clsx html-entities
 npm run dev
 ```
 
