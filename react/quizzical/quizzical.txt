@@ -1,0 +1,6 @@
+/* HTML Entities */
+
+https://www.npmjs.com/package/html-entities#user-content-decodetext-options
+https://www.npmjs.com/package/he#hedecodehtml-options
+ /* OTDB API */
+https://opentdb.com/api_config.php
